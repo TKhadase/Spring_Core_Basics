@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="aBean" class="com.tushar.beans.A">
+		<property name="b" ref="bBean"/>
+	</bean>
+	
+	<bean id="bBean" class="com.tushar.beans.B">
+	<property name="a" ref="aBean"/>
+	</bean>
+	
+</beans>
