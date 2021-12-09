@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="paymentBean" class="com.tushar.beans.Payment"/>
+	<bean id="GPay" class="com.tushar.beans.GooglePay"/>
+	<bean id="PPay" class="com.tushar.beans.PhonePay"/>
+	<bean id="paytm" class="com.tushar.beans.Paytm"/>
+	<bean id="transferBalance" class="com.tushar.beans.TransferBalance"/>
+	
+</beans>
