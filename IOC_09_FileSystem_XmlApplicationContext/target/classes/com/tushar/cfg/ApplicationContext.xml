@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- factory method returning its own class object -->
+	<bean id="c1" class="java.lang.Class" factory-method="forName">
+		<constructor-arg  value="java.util.Date"/>
+	</bean>
+	
+	<!-- factory method returning its relavant class object -->
+	<bean id="calendar" class="java.util.Calendar" factory-method="getInstance"/>
+	
+	<!-- factory method returning its unrelated class object -->
+	<bean id="props" class="java.lang.System" factory-method="getProperties"/>
+	
+</beans>
